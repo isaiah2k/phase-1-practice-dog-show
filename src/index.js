@@ -50,7 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
       })
         .then(response => response.json())
         .then(() => {
-          fetchDogs() // Re-fetch dogs to get the updated data
+          // Refetches dog list
+          fetchDogs()
           dogForm.reset()
           selectedDogId = null
         })
